@@ -1,73 +1,38 @@
-#################
-## IDEA
-#################
-
-# User-specific stuff
+# IntelliJ IDEA
 .idea/
-.idea_modules/
 *.iml
-
-# IntelliJ
+*.ipr
+*.iws
 out/
+lib/
 
+# Maven
 target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
 
-#################
-## Eclipse
-#################
+# Gradle
+.gradle/
+build/
+gradle-app.setting
+!gradle-wrapper.jar
 
-*.pydevproject
-.project
-.metadata
-bin/
-tmp/
-*.tmp
-*.bak
-*.swp
-*~.nib
-local.properties
-.classpath
-.settings/
-.loadpath
-.apt_generated/
-.apt_generated_tests/
-
-# Avoid ignoring Maven wrapper jar file (.jar files are usually ignored)
-!/.mvn/wrapper/maven-wrapper.jar
-
-# External tool builders
-.externalToolBuilders/
-
-# Locally stored "Eclipse launch configurations"
-*.launch
-
-# CDT-specific
-.cproject
-
-# PDT-specific
-.buildpath
-
-# Builder
-builder.xml
-build.xml
-
-#############
-## Windows detritus
-#############
-
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
-
-# Folder config file
-Desktop.ini
-
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
-# Mac crap
+# OS files
 .DS_Store
-REBASE.bat
-/.gradle/
+Thumbs.db
 
-/build/*
+# Logs
+*.log
+logs/
+
+# Runtime
+run/
+
+# Markdown files (except README)
+*.md
+!README.md
+test/
