@@ -1,5 +1,6 @@
 package de.ayont.lpc;
 
+import com.tcoded.folialib.FoliaLib;
 import de.ayont.lpc.commands.LPCCommand;
 import de.ayont.lpc.listener.AsyncChatListener;
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
@@ -9,6 +10,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public final class LPC extends JavaPlugin {
     private boolean isPaper;
+    private FoliaLib foliaLib;
 
     private static final LegacyComponentSerializer legacySerializer = LegacyComponentSerializer.builder()
             .character('§')
@@ -20,8 +22,13 @@ public final class LPC extends JavaPlugin {
         return legacySerializer;
     }
 
+    public FoliaLib getFoliaLib() {
+        return foliaLib;
+    }
+
     @Override
     public void onEnable() {
+        this.foliaLib = new FoliaLib(this);
         this.isPaper = checkIfPaper();
         registerCommand();
         saveDefaultConfig();
