@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>de.ayont</groupId>
-    <artifactId>LPC-Minimessage</artifactId>
+    <artifactId>LPC</artifactId>
     <version>2026.5.0</version>
     <packaging>jar</packaging>
 
