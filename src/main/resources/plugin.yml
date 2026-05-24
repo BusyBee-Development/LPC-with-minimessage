@@ -1,12 +1,14 @@
 name: LPC
-version: '${version}'
+version: '${project.version}'
 main: de.ayont.lpc.LPC
 api-version: '1.21'
+folia-supported: true
 authors: [Ayont, Varilx-Development]
 depend: [LuckPerms]
 softdepend: [PlaceholderAPI]
 description: Edit version of wikmors Legacy LPC plugin (Minimessage Support 1.21.5)
 website: https://modrinth.com/plugin/lpc-chat
+
 commands:
   lpc:
     description: Reload the configuration.
